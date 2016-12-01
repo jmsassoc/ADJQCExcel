@@ -34,7 +34,7 @@ Public Function ExportExcelFile(ByVal strStartDate As String, ByVal strEndDate A
   strCsv = Chr(34) & "Workdate" & Chr(34) & "," & Chr(34) & "Count" & Chr(34) & "," & Chr(34) & "Ad3" & Chr(34) & vbCrLf
   Set db = New ADODB.Connection
   Set db = ConnectDB(iParentApp.DBConnection("DR_Adjudication").ConnectionString, 200, 200)
-
+    '
   For dateStart = strStartDate To strEndDate
             strExportDate = Format(dateStart, "yyyy-mm-dd")
          strProcessDate = Format(dateStart, "yyyymmdd")
