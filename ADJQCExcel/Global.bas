@@ -23,7 +23,6 @@ Public strSaveFolder As String
 Public Declare Function ShellExecute Lib "shell32.dll" Alias "ShellExecuteA" (ByVal hWnd As Long, ByVal lpOperation As String, ByVal lpFile As String, ByVal lpParameters As String, ByVal lpDirectory As String, ByVal nShowCmd As Long) As Long
 Public Const SW_SHOWNORMAL = 1
 
-
 Public Function ExportExcelFile(ByVal strStartDate As String, ByVal strEndDate As String, ByVal intCheckFileProject As Integer) As Boolean
   Dim dateStart As Date
   Dim db As ADODB.Connection
